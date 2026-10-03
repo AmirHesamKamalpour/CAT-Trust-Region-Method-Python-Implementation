@@ -11,16 +11,14 @@ This repository focuses on translating the method into a clear, modular research
 Hamad and Hinder study unconstrained, possibly nonconvex optimization
 
 ```math
-\[
 \min_{x \in \mathbb{R}^n} f(x),
-\]
 ```
 
 using an adaptive trust-region method that permits inexact solutions of the trust-region subproblem. Under a Lipschitz-Hessian assumption, the paper establishes a first-order iteration complexity of
 
-\[
+```math
 O\!\left(\Delta_f L^{1/2}\epsilon^{-3/2}\right) + \widetilde{O}(1)
-\]
+```
 
 for finding an \(\epsilon\)-approximate stationary point. The paper also evaluates the method on CUTEst and compares it with established trust-region and cubic-regularization methods.
 
