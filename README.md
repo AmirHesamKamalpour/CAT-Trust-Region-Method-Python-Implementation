@@ -10,9 +10,11 @@ This repository focuses on translating the method into a clear, modular research
 
 Hamad and Hinder study unconstrained, possibly nonconvex optimization
 
+```math
 \[
 \min_{x \in \mathbb{R}^n} f(x),
 \]
+```
 
 using an adaptive trust-region method that permits inexact solutions of the trust-region subproblem. Under a Lipschitz-Hessian assumption, the paper establishes a first-order iteration complexity of
 
@@ -39,7 +41,7 @@ for finding an \(\epsilon\)-approximate stationary point. The paper also evaluat
 ## Repository structure
 
 ```text
-UT4041AOPT_Project/
+Project/
 ├── problems/
 │   ├── base.py                 # Minimal unconstrained-problem interface
 │   ├── cutest.py               # PyCUTEst adapter
