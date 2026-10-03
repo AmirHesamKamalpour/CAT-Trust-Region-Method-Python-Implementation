@@ -20,7 +20,7 @@ using an adaptive trust-region method that permits inexact solutions of the trus
 O\!\left(\Delta_f L^{1/2}\epsilon^{-3/2}\right) + \widetilde{O}(1)
 ```
 
-for finding an \(\epsilon\)-approximate stationary point. The paper also evaluates the method on CUTEst and compares it with established trust-region and cubic-regularization methods.
+for finding an epsilon-approximate stationary point. The paper also evaluates the method on CUTEst and compares it with established trust-region and cubic-regularization methods.
 
 **Paper:** [arXiv:2412.02079](https://arxiv.org/abs/2412.02079)  
 **Official implementation:** [CATrustRegionMethod.jl](https://github.com/fadihamad94/CATrustRegionMethod.jl)
@@ -29,7 +29,7 @@ for finding an \(\epsilon\)-approximate stationary point. The paper also evaluat
 
 - The CAT outer trust-region method, including adaptive radius updates, trial-point acceptance, gradient-based termination, and evaluation accounting.
 - An inexact trust-region subproblem solver with Newton-step detection, interval search, bisection, and hard-case handling through inverse power iteration.
-- Shifted systems of the form \((H + \delta I)x=b\), with sparse direct solves and a matrix-free iterative fallback.
+- Shifted systems of the form $(H + \delta I)\,x = b$, with sparse direct solves and a matrix-free iterative fallback.
 - Sparse Hessian support through SciPy, optional CHOLMOD factorization through `scikit-sparse`, SuperLU fallback, and MINRES for `LinearOperator` Hessians.
 - A small problem interface that decouples the optimizer from CUTEst and makes the solver usable with custom unconstrained problems.
 - PyCUTEst integration for benchmark problems, resumable experiment execution, per-problem JSON output, and aggregate CSV results.
@@ -85,7 +85,7 @@ Project/
 | --- | --- |
 | CAT outer iteration | `optimizers/cat.py` |
 | Trust-region subproblem | `optimizers/trust_region.py` |
-| \((H + \delta I)x=b\) solves / factorization | `optimizers/linear_solver.py` |
+| $(H + \delta I)\,x = b$ solves / factorization | `optimizers/linear_solver.py` |
 | Numerical parameters and result types | `optimizers/types.py` |
 | Problem abstraction | `problems/base.py` |
 | CUTEst adapter | `problems/cutest.py` |
