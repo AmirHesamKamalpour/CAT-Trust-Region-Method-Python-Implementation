@@ -1,0 +1,36 @@
+problem_names: problems/problem_names.txt
+results_csv: results/processed/cutest_results.csv
+raw_results_dir: results/raw
+max_dimension: 10000
+resume: true
+quiet_import: false
+skip_names:
+  # Expensive to load
+  - BA-L16LS
+  - BA-L21LS
+  - BA-L49LS
+  - BA-L52LS
+  - BA-L73LS
+
+  # Fail to load in the original pycutest setup
+  - GENHUMPS
+  - SENSORS
+
+  # Reported as constrained by pycutest
+  - COATINGNE
+
+  # Expensive to solve in the original experiments
+  - EIGENBLS
+  - EIGENCLS
+  - FMINSURF
+  - NONCVXU2
+  - NONCVXUN
+  - NONMSQRT
+  - POWER
+  - SCURLY10
+  - SCURLY20
+  - SCURLY30
+  - YATP1CLS
+  - YATP1LS
+  - YATP2CLS
+  - YATP2LS

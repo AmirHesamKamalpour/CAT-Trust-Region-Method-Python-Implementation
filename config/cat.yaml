@@ -1,0 +1,18 @@
+cat:
+  beta: 0.1
+  theta: 0.1
+  omega1: 8.0
+  omega2: 16.0
+  gamma1: 0.01
+  gamma2: 0.8
+  gamma3: 0.5
+  tol: 1.0e-5
+  max_iter: 100000
+  step_min: 2.0e-16
+  max_time_sec: null
+  trs_max_iter: 100
+  lin_solve_tol: 1.0e-10
+  lin_solve_maxit: 5000
+  eig_maxiter: 200
+  eig_tol: 1.0e-6
+  pd_jitter: 1.0e-12
