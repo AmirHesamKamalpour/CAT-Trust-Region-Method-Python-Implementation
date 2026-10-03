@@ -240,11 +240,6 @@ This implementation was developed while studying modern second-order methods for
 
 The repository began as a final project for **Advanced Optimization (Fall 2025), University of Tehran**, and was subsequently reorganized into the current research-oriented code structure.
 
-## Contributors
-
-- Diyar Hamedi
-- Amirhesam Kamalpour
-
 ## References and acknowledgements
 
 The algorithm implemented here is based on:
